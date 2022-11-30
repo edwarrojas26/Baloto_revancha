@@ -47,7 +47,6 @@ function Baloto_revancha() {
   }, 5010);
 
   setTimeout(() => {
-    // location.reload();
     if (
       seleccion1 == random1 ||
       seleccion2 == random2 ||
@@ -56,9 +55,25 @@ function Baloto_revancha() {
       seleccion5 == random5 ||
       seleccion6 == random6
     ) {
-      alert(" Has Ganado ");
+      Swal.fire({
+        html: `
+        <p>El resultado de las balotas es: <strong>${random1}-${random2}-${random3}-${random4}-${random5}-${random6}<br>:)</strong></p>
+        <h1>¡Genial! Eres nuestro ganador, tu premio es estudiar en el SENA el tecnólogo en ADSI</h1>
+        `,
+      });
+      setTimeout(() => {
+        location.reload();
+      }, 6000);
     } else {
-      alert("Has perdido");
+      Swal.fire({
+        html: `
+        <p>El resultado de las balotas es: <strong>${random1}-${random2}-${random3}-${random4}-${random5}-${random6}<br>:(</strong></p>
+        <h1>¡Ohhhh has perdidio, vuelvelo a intentar, no te rindas!</h1>
+        `,
+      });
+      setTimeout(() => {
+        location.reload();
+      }, 6000);
     }
   }, 5030);
 }

@@ -217,11 +217,10 @@
   .seleccion2,
   .seleccion3,
   .seleccion4,
-  .seleccion5{
+  .seleccion5 {
     background-color: yellow;
   }
 
-  
   .seleccion6 {
     background-color: red;
   }
