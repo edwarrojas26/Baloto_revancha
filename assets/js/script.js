@@ -58,7 +58,7 @@ function Baloto_revancha() {
       Swal.fire({
         html: `
         <p>El resultado de las balotas es: <strong>${random1}-${random2}-${random3}-${random4}-${random5}-${random6}<br>:)</strong></p>
-        <h1>¡Genial! Eres nuestro ganador, tu premio es estudiar en el SENA el tecnólogo en ADSI</h1>
+        <h1>¡Genial! Eres nuestro ganador, felicidades</h1>
         `,
       });
       setTimeout(() => {
